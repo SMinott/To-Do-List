@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- BOOTSTRAP -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+    />
+    <!-- STYLESHEET-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<!-- MAIN DIV -->
+    <div class="app">
+        <h4 class="mb-3"> ToDo App</h4>
+<!-- DIV TO ADD TASKS -->
+        <div id="addNew" data-bs-toggle="modal" data-bs-target="form">
+            <span>Add New Task</span>
+            <i class="fas fa-plus"></i>
+        </div>
+
+        <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary">
+    Launch demo modal
+</button> -->
+  
+  <!-- Modal -->
+  <form class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="textInput" class="form-label">Task Title</label>
+            <input class="form-control" type="text" name="" id="textInput"> <br>
+            <label for="dataInput" class="form-label">Due Date</label>
+            <input class="form-control" type="date" name="" id="dataInput"> <br>
+            <label for="textarea" class="form-label">Description</label>
+            <textarea class="form-control" name="" id="textarea" cols="30" rows="3"></textarea>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  
+
+        <div>
+            <h5 class="text-center my-3">Tasks</h5>
+        </div>
+<!-- DIV WHERE TASKS ARE LISTED -->
+        <div id="tasks">
+            <div>
+                <span class="fw-bold">Task 1</span>
+                <span class="small text-secondary">2022-09-09</span>
+                <p>Do and put away dishes</p>
+                <span class="options">
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash"></i>
+                </span>          
+            </div>
+            <div>
+                <span class="fw-bold">Task 2</span>
+                <span class="small text-secondary">2022-09-10</span>
+                <p>Clean out garage</p>
+                <span class="options">
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash"></i>
+                </span>
+            </div>
+            <div>
+                <span class="fw-bold">Task 3</span>
+                <span class="small text-secondary">2022-09-10</span>
+                <p>laundry</p>
+                <span class="options">
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash"></i>
+                </span>
+            </div>
+            
+        </div>
+     
+
+    </div>    
+</body>
+<script src="main.js"></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"
+    ></script>
+</html>

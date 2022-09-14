@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(247, 231, 247);
+}
+.app{
+    width: 300px;
+    height: 500px;
+    border: 5px solid blueviolet;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+#addNew{
+    /* background-color: rgb(247, 239, 247); */
+    display: flex;
+    background-color: rgb(246, 215, 246);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.fa-plus{
+    background: rgb(225, 135, 225);
+    padding: 2px;
+    border-radius: 3.5px;
+}
+#tasks{
+    display: grid;
+    gap: 14px
+}
+
+#tasks div{
+    background-color: rgb(246, 215, 246);
+    border: solid blueviolet 5px;
+    border-radius: 7px;
+    padding: 5px;
+    display: grid;
+    gap: 5px;
+}
+
+#tasks div .options{
+    display: flex;
+    gap: 30px;
+    justify-self: center;
+    cursor: pointer;
+}
